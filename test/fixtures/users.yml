@@ -1,4 +1,28 @@
 ruriko:
   name: Ruriko Aoki
-  email: coloruri@example.com
+  email: coloruri@atomicmonkey.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+  
+sayuri:
+  name: Sayuri Hara
+  email: meshiya@eightyoneproduce.com
+  password_digest: <%= User.digest('password') %>
+  
+ayaka:
+  name: Ayaka Ohashi
+  email: hego@horipro.com
+  password_digest: <%= User.digest('password') %>
+  admin: true
+  
+natsumi:
+  name: Natsumi Takamori
+  email: natsumi@profit.com
+  password_digest: <%= User.digest('password') %>
+  
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

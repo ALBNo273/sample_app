@@ -1,0 +1,15 @@
+one:
+  follower: ruriko
+  followed: natsumi
+
+two:
+  follower: ruriko
+  followed: ayaka
+
+three:
+  follower: natsumi
+  followed: ruriko
+
+four:
+  follower: sayuri
+  followed: ruriko
